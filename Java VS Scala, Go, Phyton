@@ -1,0 +1,154 @@
+--Java--
+Java, Sun Microsystems tarafından geliştirilmiş çok platformlu, nesne yönelimli, ağ 
+merkezli bir programlama dilidir. Java, bir programlama dili ve uygulama geliştirme 
+için bir bilgi işlem platformudur. İlk olarak 1995 yılında Sun Microsystem tarafından 
+piyasaya sürüldü ve daha sonra Oracle Corporation tarafından satın alındı.İlk bilgisayarlar 
+ortaya çıktığında, şimdi kullandığımız FORTRAN, COBOL, Pascal, C/C++, Java gibi üst düzey 
+diller yoktu. Farklı makinelerin donanım yapıları farklı olduğu için, farklı marka ve model 
+bilgisayarların makine dilleri (makinelerin anladığı tek dil) birbirlerinden farklı idi. 
+O nedenle, ilk programcılar, bilgisayara, ancak kullandıkları makinenin  makine dili ile iş 
+yaptırabiliyorlardı. Makine dilini öğrenmek zor olmak yanında, bir makine için öğrenilen makine
+dili, farklı marka ve modeller için geçerli olmuyordu. Bu zorluğu aşmak için önce assembler dili
+ve hemen arkasından üst düzey diller ortaya çıktı. Üst düzey diller, programcılara büyük rahatlık
+getirdi. Çünkü, programcı, işletim sistemini ve makineyi düşünmeden, kaynak programını istediği 
+dille yazabiliyordu. Örneğin, C ile yazılan bir kaynak programı, uygun derleyici ile her işletim 
+sisteminde ve her makinede derlenip çalıştırılabiliyordu. [Tabii, C derleyicisi yazan farklı şirketlerin 
+standarttan ufak sapmalarını göz ardı ediyoruz.] Şimdi adına prosedürel diller denilen FORTRAN, COBOL, 
+Pascal, Modula, C gibi üst düzey diller uzun yıllar programcılara başarıyla hizmet ettiler; halen de etmektedirler. 
+Ama ortada bir problem vardı. Belirli bir işletim sistemi altında çalışan belirli tür bir makinede derlenen
+bir kaynak program, ancak o işletim sistemi altında çalışan o tür makinelerde koşturulabiliyordu. İşletim 
+sistemi ve/veya makine türü değişince; yani platform değişince, program orada koşamıyordu; yeni platforma 
+uygun bir derleyici ile yeniden derlenmesi gerekiyordu. Buna, kısaca platform bağımlılık diyoruz. Platform 
+bağımlılıktan kastettiğimiz şey, bir kaynak programın belirli bir işletim sistemi altında çalışan belirli bir
+derleyici ile derlendiği ve ancak belirli bilgisayar türlerinde koşturulabildiği gerçeğidir. Örneğin, 
+Windows işletim sistemi altında çalışan bir PC de derlenen bir bilgisayar programını  Macintosh ya da Linux 
+işletim sistemi altında çalışan bir makinede koşturmak mümkün değildir.Piyasaya farklı işletim sistemlerinin
+ve çok sayıda farklı donanımın çıkması, bilgisayar ağlarının gelişmesi, bir ağa bağlı makinelerin farklı işletim 
+sistemleri altında çalışan farklı marka ve model bilgisayarlardan oluşuyor olması problemi büyüttü.Problemin çözümü, 
+platformdan bağımsız çalışabilecek bir dilin yaratılmasını gerektiriyordu. Bu iş, Sun firmasının geliştirdiği Java dili 
+ile çözüldü. Gerçi Sun firması, ortaya çıkan bu büyük problemi çözmek için değil, daha basit bir amaçla yola çıktı. 
+Elektrikli ev aletlerinin kolay kullanılmasını sağlayacak bir dil geliştirmek istiyordu. Kısa zamanda, bu işin ancak 
+ortak bir platformda yapılabileceğini anladı. Sun’ın programcısı James Gosling, 1995 yılında her platformda çalışan Java 
+dilini yarattı.Gosling basit ama harika bir buluş yaptı. Farklı işletim sistemleri ve farklı donanımlarda kurulabilen ortak 
+bir sanal makine tasarladı. Adına JVM (Java Virtual Machine) denilen bu sanal makine ücretsiz dağıtıldı. JVM her 
+platforma kolayca kurulabilir. Java dili ile yazılan kaynak programlar, java derleyicisi ile JVM de çalışabilen 
+bir tür makine diline dönüştürülür. Adına java byte kod denilen bu program JVM tarafından yorumlanır ve çalıştırılır.
+Java byte kod bir bakıma, prosedürel dillerde yazılıp derlenmiş kaynak programların işlevini yapar.Java uygulamalarını 
+çalıştırmak isteyen herkes, kendi makinesine JVM ‘i kurabilir. Bunun için JRE (Java Runtime Environment) adlı programı 
+internetten indirip yüklemesi yetecektir. JRE bilgisayara bir kez yüklenir. Ondan sonra Java uygulamalarının hepsi bu 
+makinede çalışabilir. Makinede bir java uygulaması çalışacağı zaman, JRE kendiliğinden JVM sanal makinesini oluşturur. 
+JVM gerektiğinde çalışan bir programdır; her program gibi, işi bitince ana bellekten silinir. Dolayısıyla makineye bir 
+zarar vermesi söz konusu değildir. Günümüzde, java uygulamaları ile karşılaşan tarayıcıların çoğu, JRE’yi otomatik olarak 
+indirip yükleme yeteneğine sahiptir.   Java basit, modern, nesne yönelimli, tip-korumalı ve C ile C++ dillerinin iyi 
+özeliklerini almış bir dildir. Fazla olarak, her platformda çalışabilme yeteneğine sahiptir. Bu yetenek, onu yalnız 
+bilgisayarlarda değil, internet uygulamalarına, cep telefonlarına, oyun makinelerine, ev aletlerine kadar geniş bir 
+yelpazede uygulama alanı bulmasını sağladı. Bu nedenle, Java’yı hem programlama dili, hem de bir ortam olarak düşünebiliriz. 
+Bu ortamda işletim sistemi, ağlar, internet programlama, veritabanı ve bütün orta katman (middleware) teknolojileri yer alır.
+Özetle, Java basit bir dildir. Kolay öğrenilir. Genel amaçlı bir dilin bütün hünerlerine sahiptir.
+C, C++ dillerinin iyi özeliklerini almıştır. Kullanıcı dostu ve hızlı bir uygulama geliştirme  aracıdır.
+
+--Scala--
+Scala, işlevsel ve nesne yönelimli programlamayı içeren, statik olarak yazılmış bir programlama dilidir. 
+Öncelikle JVM (Java Virtual Machine) platformunu hedefler, ancak birden çok platform için yazılım yazmak 
+için de kullanılabilir. Scala-Native kullanan yerel platformları ve Scala aracılığıyla JavaScript çalışma 
+zamanlarını içerir.
+
+--Phyton--
+1991'den beri Python programlama dili sadece gereksiz programlar için tamamlayıcı bir dil olarak değerlendiriliyordu. 
+Hatta “Automate the Boring Stuff” (Türkçe'ye "Sıkıcı Şeyleri Otomatikleştiren" olarak çevirebileceğimiz popüler bir kitap) 
+adında bir kitap dahi yayınlanmıştır. Bununla birlikte son birkaç yılda Python modern yazılım geliştirme, altyapı yönetimi 
+ve veri analizinde birinci sınıf bir programlama dili olarak ön plana çıkmıştır. Artık hackerlar için bir arka kapı oluşturucusu 
+değil, web uygulaması oluşturma ve sistem yönetiminde önemli rol alma, veri analizleri ve makine öğreniminde parlayan bir dil olarak 
+ün kazanmıştır.Ayrıca, Ansible ve Salt gibi araçlarda sistem gereksinimlerini ve yapılandırmasını sağlayan, bunlara ek olarak web 
+tarayıcıları veya uygulama GUI'leriyle etkileşimleri otomatikleştiren özellikleri de bulunmaktadır. Kısaca anlatmak gerekirse, Script 
+oluşturmak ve otomasyon Python için buz dağının sadece görünen kısmıdır.
+
+--Go Lang--
+Go dili söz dizimini öğrenmek basittir. Ancak programlama gücünü C/C++ ile yarışacak kadar ispatlamıştır. Bu performans testleriyle 
+ilgili birçok kıyas (benchmark) makalesi yayınlanmaktadır. Go’nun “C gibi güçlü” hedefiyle geliştirilmeye başlanmasına karşın, web 
+tarafında da hızla gelişmiş ve birçok Framework çalışmasıyla şu an küresel çapta ciddi diyebileceğimiz birçok proje tarafından tercih 
+edilmektedir(Docker, Koding, Google vb.). Aynı zamanda web yeniliklerine uyumlu olarak geliştirilmiştir. Mesela bir paketi ister lokal 
+olarak oluşturup kod sayfanıza ekleyin, isterseniz de github.com gibi bir versiyon sistemi üzerinden doğrudan kod sayfanıza import kısmında 
+linkini ekleyerek (tabi ‘go get’ ile lokal ortama kurulumu yapıldıktan sonra) kullanabilirsiniz.Go dili geliştirici ekibinin temel prensiplerinden 
+biri de “bir işi yapmanın en iyi yolunu bulursan farklı yöntemlere gerek yoktur” üzerine kuruludur. Bu nedenle farklı dillerde bir iş için bile 
+her geliştiricinin farklı yöntemler kullanması olasıyken, Go dilinde o bir iş için genellikle bir yol vardır. Ancak o bir yolun performansı için 
+belki binlerce profesyonel geliştiricinin geri bildirimleri alınmıştır.Go tek bir dosyaya derlenir. Bu da tek bir binary dosyası üzerinde taşıma 
+ve yönetim gerçekleştirebileceğiniz anlamına gelir ki, Java ve C# gibi dillerde taşıma-kopyalama işlemleri ciddi sorunlar ve vakit kayıplarına neden 
+olabilir.Go dili benchmark testlerinde de C/C++ dilini performans konusunda geçerek kendini kanıtlamış bir dil oldu.Go dilinde söz dizimi anlaşılır 
+ve basittir. Go dili 25 adet keyword içerir. C (37 keyword), C++ (84 keyword), C#, Java, Rust gibi birçok dilde çok daha fazla keyword vardır.
+Go uygulamanızın içerisinde C, Python gibi farklı dilleri doğrudan kodunuzu yazarak çalıştırabilirsiniz. Go, C'nin bilinen özelliklerini taşımaktadır 
+ancak yapılan değişiklikler dili basit, kısa ve güvenli hale getirmiştir. Golang esnek bir dildir bu sayede bir çok alanda proje geliştirmenize olanak 
+sağlar.Go ile sistem ve ağ programlama, big data, web, CLI ve masaüstü alanlarında proje geliştirebilirsiniz.Go, sunucu ve alt sistemler geliştirmek 
+için harika bir dildir.
+
+Google’ın, Golang’ı Android tarafı için kullanma planı vardır.
+
+Aşağıda Go'yu kısaca tanımlayan özellikler yer almaktadır:
+Söz dizimi ve çevresel kalıpları benimsemesi daha çok dinamik dillere benzemektedir:
+Değişken tanımındaki tür belirtimi isteğe bağlıdır. (int x = 0; yerine x := 0;).
+Hızlı derleme süresi.
+Uzak paket yöneticisi (go get) ve online paket dokümantasyonu. 
+Belirli problemlere ayırt edici yaklaşımlar:
+Dahili eş zamanlılık ilkelleri: light-weight process'lar (goroutines), kanallar, ve select ifadesi.
+Varsayılan olarak statik olarak bağlanmış native binary'ler, ekstra bağımlılıklara ihtiyaç duyulmadan üretilir.
+Ve bahsettiğimiz bu özelliklerinden ve performansından ötürü giderek popülerleşen bir dil olmaya devam etmektedir.
+
+
+
+
+Java'nın Avantajları
+
+Ayrıntılı belgeler mevcuttur.
+Geniş bir yetenekli geliştirici havuzu mevcut
+Standart programlar ve yeniden kullanılabilir kodlar oluşturmanıza olanak sağlar.
+Bir programda aynı anda birçok görevi gerçekleştirmenize izin veren çok iş parçacıklı bir ortamdır.
+Mükemmel performans
+Çok sayıda 3. parti kitaplık
+Kitaplıklarda gezinmek kolay
+
+Scala'nın Avantajları
+
+Scala, nesne yönelimli programcılar (Java geliştiricileri) için öğrenmesi kolaydır. Son yıllarda popüler dillerden biri haline geliyor.
+Scala, kullanıcılar için birinci sınıf işlevler sunar
+Scala, JVM üzerinde çalıştırılabilir, böylece diğer dillerle birlikte çalışabilirliğin yolunu açar.
+Eşzamanlı, dağıtılmış, esnek ve mesajla çalışan uygulamalar için tasarlanmıştır. Bu on yılın en zorlu dillerinden biridir.
+Özlü, güçlü bir dildir ve kullanıcılarının talebine göre hızla büyüyebilir.
+Nesne odaklıdır ve geliştiricilere istedikleri şekilde kodlama konusunda çok fazla esneklik sağlayan birçok işlevsel programlama özelliğine sahiptir.
+Scala birçok Ördek Türü sunar
+Java'dan geliyorsanız, daha az standart levhaya sahiptir.
+Scala'da yazılan Kaldır ve Oyna çerçeveleri büyüme eğrisindedir.
+Java'nın dezavantajları
+
+İşte Java kullanmanın eksileri / sakıncaları-
+
+JIT derleyicisi programı nispeten yavaşlatır.
+Java'nın yüksek bellek ve işlem gereksinimleri vardır. Bu nedenle donanım maliyeti artar.
+İşaretçiler gibi düşük seviyeli programlama yapıları için destek yok.
+Java, delete (), free () gibi işlevler sağlamadığından, çöp toplama üzerinde herhangi bir denetime sahip değilsiniz.
+Scala'nın dezavantajları
+
+İşte skala'nın birkaç dezavantajı / dezavantajı:
+
+Scala, çok sınırlı topluluk varlığı sunar.
+Kolay adapte edilebilen bir dil değil.
+Geriye dönük çok sınırlı uyumluluk sunar
+
+Python’un Avantajları
+
+Çok basit bir sözdizimi var.
+Makine Öğrenmesi, Derin Öğrenme ve genel kapsamlı AI alanında yaygın olarak kullanılıyor. Veri analizi ve görselleştirmede çokça tercih ediliyor.
+Web geliştirmede Django gibi bir frameworke sahip.
+
+Python’un Dezavantajları
+
+Python öğrendikten sonra Java gibi dilleri öğrenmek zordur fakat Java’dan Python’a geçiş oldukça rahattır. Python, programların 
+çalışma şeklinden temel kavramları soyutlar ve ilk önce bir mantık yaklaşımını tercih eder.
+Daha az platformda kullanılır.
+Python yorumlanmış bir dil olduğundan, çoğu durumda Java’dan daha yavaştır.
+
+
+
+
+
+
+
