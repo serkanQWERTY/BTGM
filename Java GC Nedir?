@@ -1,0 +1,9 @@
+Java’da bellek yönetimi arka planda JVM ve onun içinde yer alan Garbage Collector(Çöp Toplayıcısı) ile yapılır. 
+Bu aslında Java’yı Java yapan özelliklerden biridir. Çünkü bir geliştirici olarak endişe duymadan yeni nesneler 
+yaratırsınız ve GC sizin için memory allocation ve deallocation işlemlerini yapar. Yani JVM bunu sizin için yönetir. 
+C/C++ gibi dillerde bunun kontrolü sizin elinizdedir. Bu durum yazılımda hata çıkma ihtimalini arttırır ve geliştirme 
+sürecini uzatabilir.
+
+Garbage Collection, otomatik bellek yönetimi mekanizmasıdır. Bu işlem heap belleğe bakıp, kullanılan objelerin tespit 
+edilmesi ve referans edilmeyenlerin silinmesi üzerine kuruludur. Kullanılmayan/referans edilmeyen nesnelerin kapladığı 
+alan bellekte boşa çıkarılır ve bellekte boş yer açılmış olur. Bu işlemi yapan mekanizmaya da Garbage Collector denir.
