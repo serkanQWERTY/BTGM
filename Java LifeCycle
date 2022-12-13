@@ -1,0 +1,20 @@
+Bir java programının yaşam döngüsü, bir metin düzenleyicide kaynak kodunu yazdığımız andan, 
+kaynak kodun makine koduna (0'lar ve 1'ler) dönüştürüldüğü noktaya kadar neler olduğunu bize anlatır.
+
+Bir java programının yaşam döngüsünde üç ana aşama vardır. Bunlar:
+
+1.programı düzenleme
+2.Kaynak kodunun derlenmesi
+3.Bayt kodunu yürütme
+
+Öncelikle, programı bir metin düzenleyicide yazmaya başlayacaksınız (ör: notepad, notepad++, wordpad, textedit vb.). 
+Programın düzenlemesini tamamladıktan sonra dosyayı kaydetmemiz gerekiyor. Dosyayı kaydederken, dosyanın .java uzantılı kaydedilmesi 
+gerektiğini unutmamalısınız. Örneğin, tek bir Sample sınıfı içeren bir Java programı yazdığımı düşünelim .
+Dosyayı sınıfın adıyla kaydetmek iyi bir kuraldır. 
+
+İkinci adım derlemedir. Java derleyicisinin adı javac'tır. Derleyiciye girdi, Sample.java'da bulunan Java kaynak kodudur. 
+Derleyicinin çıktısı, bayt kodu olarak bilinen makineden veya platformdan bağımsız koddur. Derlemeden sonra oluşturulan dosya .class dosyasıdır.
+Benim örneğime göre, bayt kodu dosyası Sample.class olacaktır. Son adım yürütmedir. Derleyici tarafından oluşturulan bayt kodu, 
+Java Virtual Machine (JVM) tarafından yürütülecektir. JVM'ye giriş, bayt kodudur ve çıkış, yerel makinenin CPU'su tarafından yürütülecek 
+olan makine kodudur (0'lar ve 1'ler).
+
